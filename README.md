@@ -57,3 +57,25 @@ The software design document includes detailed recommendations for:
 **Kylie Reiter**  
 Southern New Hampshire University  
 GitHub: [kylereiter](https://github.com/kylereiter93)
+
+---
+
+## 📝 Reflection – Module Eight Journal
+
+### 🔹 Who was the client and what were their requirements?
+The client was *The Gaming Room*, a fictional company developing a multiplayer guessing game called **Draw It or Lose It**. They wanted a scalable software design that supports cross-platform compatibility and distributed environments while ensuring performance and security.
+
+### 🔹 What did I do well?
+I did well organizing the software design document clearly and implementing the **Singleton** and **Iterator** patterns effectively. These helped structure the code and support scalability.
+
+### 🔹 What part of the process helped the most?
+Creating the software design document early helped map out the application's logic and architecture before coding. This made implementation smoother and more structured.
+
+### 🔹 What would I revise and how?
+I would revise the architecture section by adding visual diagrams (like system flowcharts) to make the technical recommendations more digestible for stakeholders and team members.
+
+### 🔹 How did I interpret and implement user needs?
+I focused on user needs by prioritizing platform flexibility, security, and support for multiplayer game sessions. These were implemented through system architecture choices and code design patterns.
+
+### 🔹 What’s my design approach going forward?
+I plan to continue starting with a detailed design document, using pattern-based development, and incorporating diagrams and user-centered design. This ensures the final product is maintainable, scalable, and meets client expectations.
