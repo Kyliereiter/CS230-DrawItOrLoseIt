@@ -1,81 +1,68 @@
-# 🎮 CS230 – DrawItOrLoseIt
+# Draw It or Lose It – Java Service Design Project
 
-This is a final project for CS 230: Operating Platforms at SNHU. It includes a Java-based game service that uses the **Singleton** and **Iterator** design patterns, along with a complete software design document covering system architecture recommendations for expanding the game across distributed environments.
+## Overview
+Draw It or Lose It is a Java-based software design project focused on modeling a scalable, service-oriented game system. The project emphasizes object-oriented design, architectural patterns, and system constraints rather than full UI implementation.
 
----
-
-## 📘 Project Summary
-
-**DrawItOrLoseIt** is a team-based guessing game where players try to identify a phrase or object as it's gradually revealed through stock images. This project simulates the backend logic with the following features:
-
-- Game, player, and team object management  
-- Support for multiple simultaneous game instances  
-- Architectural recommendations for platform expansion
+The goal was to design a backend service capable of supporting a multiplayer game environment with efficient memory usage and extensibility across platforms.
 
 ---
 
-## 🔧 Technologies
+## Problem Statement
+The client required a system that could:
+- Support multiple concurrent game instances
+- Manage game data efficiently across sessions
+- Scale to support multiple users without duplicating resources
+- Remain platform-independent and maintainable
 
-- Java  
-- Eclipse IDE  
-- Dropwizard (for REST simulation)  
-- GitHub for version control  
-
----
-
-## 🧩 Patterns Implemented
-
-- **Singleton** – GameService class ensures a single instance across the app  
-- **Iterator** – Enables clean traversal over a list of games
+Key challenges included controlling memory usage, enforcing single-instance services, and designing a system flexible enough for future expansion.
 
 ---
 
-## 📂 Files Included
+## Solution Design
+I designed a Java-based service architecture that applies object-oriented principles and common design patterns to meet scalability and efficiency requirements.
 
-- `Entity.java` – Abstract base class  
-- `Game.java` – Game instance logic  
-- `GameService.java` – Singleton pattern implementation  
-- `Player.java` and `Team.java` – User and team logic  
-- `ProgramDriver.java` – Main app runner  
-- `SingletonTester.java` – Unit test to verify singleton  
-- `DrawItOrLoseIt_CS230.docx` – Full software design doc (Projects 1–3)
+The system design includes:
+- Centralized game service management
+- Controlled instance creation
+- Clear separation of responsibilities between components
 
 ---
 
-## 🛡️ Security & Scalability
-
-The software design document includes detailed recommendations for:
-- Choosing an operating system for deployment (Linux)
-- Managing memory and file storage
-- Handling cross-platform distributed communication
-- Protecting user data and enforcing RBAC (role-based access control)
-
----
-
-## 👩‍💻 Author
-
-**Kylie Reiter**  
-Southern New Hampshire University  
-GitHub: [kylereiter](https://github.com/kylereiter93)
+## Technologies and Concepts
+- Java
+- Object-Oriented Programming (OOP)
+- UML Diagrams
+- Design Patterns (Singleton, Iterator)
+- Software Architecture Design
+- Software Development Lifecycle (SDLC)
 
 ---
 
-## 📝 Reflection – Module Eight Journal
+## What I Worked On
+- Designed class diagrams to model system structure and responsibilities.
+- Applied the Singleton pattern to ensure only one instance of the game service exists.
+- Used the Iterator pattern to efficiently manage and traverse game data.
+- Defined clear object responsibilities to improve maintainability and extensibility.
+- Evaluated architectural tradeoffs related to memory usage and performance.
 
-### 🔹 Who was the client and what were their requirements?
-The client was *The Gaming Room*, a fictional company developing a multiplayer guessing game called **Draw It or Lose It**. They wanted a scalable software design that supports cross-platform compatibility and distributed environments while ensuring performance and security.
+---
 
-### 🔹 What did I do well?
-I did well organizing the software design document clearly and implementing the **Singleton** and **Iterator** patterns effectively. These helped structure the code and support scalability.
+## Key Design Decisions
+- Implemented Singleton to control shared resources and reduce memory overhead.
+- Used Iterators to safely access collections without exposing internal structure.
+- Designed the system to allow future enhancements without major refactoring.
+- Focused on backend logic and service architecture rather than UI details.
 
-### 🔹 What part of the process helped the most?
-Creating the software design document early helped map out the application's logic and architecture before coding. This made implementation smoother and more structured.
+---
 
-### 🔹 What would I revise and how?
-I would revise the architecture section by adding visual diagrams (like system flowcharts) to make the technical recommendations more digestible for stakeholders and team members.
+## Why This Project Matters
+This project demonstrates my ability to:
+- Apply design patterns appropriately in real-world scenarios
+- Think about scalability, performance, and maintainability
+- Design backend services using clean architecture principles
+- Translate system requirements into structured technical solutions
 
-### 🔹 How did I interpret and implement user needs?
-I focused on user needs by prioritizing platform flexibility, security, and support for multiplayer game sessions. These were implemented through system architecture choices and code design patterns.
+---
 
-### 🔹 What’s my design approach going forward?
-I plan to continue starting with a detailed design document, using pattern-based development, and incorporating diagrams and user-centered design. This ensures the final product is maintainable, scalable, and meets client expectations.
+## Related Skills
+Java, Backend Architecture, Design Patterns, Object-Oriented Design, UML, Software Engineering Fundamentals
